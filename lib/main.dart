@@ -34,7 +34,6 @@ class homepage extends StatefulWidget {
 var data;
 
 Future<void> fetchdata()async{
-  var url = 'https://jsonplaceholder.typicode.com/users';
   var response =  await http.get(Uri.parse('https://jsonplaceholder.typicode.com/users'));
 
    if(response.statusCode== 200){
